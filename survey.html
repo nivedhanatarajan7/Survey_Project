@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1 id="title">Favorite Programming Language Survey Form</h1>
+<p id="description">Do you have a favorite programming language? Let us know what your favorite programming language is!</p>
+<form id="survey-form">
+
+  <fieldset>
+  <label id="name-label">Please enter your first and last name into the field provided.</label>
+  <label for="name">Enter your name: <input id="name" required type="text" placeholder="Ex. Firstname Lastname"></label>
+    <label id="email-label">Please enter your email into the field provided.</label>
+  <label for="email">Enter your email:     <input required id="email" type="email" placeholder="Ex. abc@xyz.com"></label>
+
+    </fieldset>
+
+    <fieldset>
+    <label id="number-label">For each programming language, please give your rating from 1 (1 = Terrible)to 5 (5 = Best).</label>
+
+  <label for="number">Rating for Javascript : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+
+<label for="number">Rating for Java : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+
+<label for="number">Rating for Python : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+
+<label for="number">Rating for C# : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+
+
+<label for="number">Rating for C++ : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+
+
+<label for="number">Rating for PHP : <input required id="number" type="number" min=1 max=5 placeholder="Ex. 5"></label>
+  </fieldset>
+
+<fieldset>
+<label required id="code"> Do you code on a daily basis?
+  <input name="code" type="radio" class="inline" value="yes"> Yes
+  <input name="code" type="radio" class="inline" value="no"> No
+</label>
+<label for="dropdown"> What is your favorite programming language?
+  <select required  id="dropdown">
+    <option>select one</option>
+    <option>Python</option>
+    <option>Java</option>
+    <option>Javascript</option>
+    <option>C#</option>
+    <option>Other</option>
+
+  </select>
+</label>
+
+
+<label> Please elaborate on what your favorite programming language is and why it is you favorite programming language.
+  <textarea required  rows=3 cols=30 placeholder="Type your opinion here."></textarea>
+  </label>
+
+</fieldset>
+
+<fieldset>
+<label>
+    <input  class="inline" type="checkbox" value="interview"> Would you like to be contacted by our team to be interviewed regarding your opinions from this survey? (optional)
+    </label>
+    <label>
+  <input class="inline"  type="checkbox" value="mailing"> Would you like to be added to the mailing list to receive latest updates on technological discoveries? (optional)
+</label>
+
+</fieldset>
+<label for="submit">
+  <input id="submit" type="submit" value="Submit">
+</label>
+</form>
+</body>
+</html>
